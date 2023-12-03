@@ -65,32 +65,6 @@ header {
     height: 139px;
 }
 
-/* Style Navigation Bar 
-nav ul {
-    padding-top: 40px;
-    margin-right: 15px;
-    float: right;
-    font-size: 18px;
-}
-
-li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #292A6B;
-    color: white;
-    border-radius: 30px;
-    padding: 12px;
-}*/
-
 /* Logo */
 .logo img {
     height: 139px;
@@ -179,7 +153,7 @@ nav ul li a:hover {
     color: white;
     padding: 60px 100px;
     height: auto;
-    background-color: #292A6B;
+    background-color: #0a6dc2;
     font-size: 20px;
 }
 
@@ -188,15 +162,22 @@ nav ul li a:hover {
 }
 
 /* Style Second Info Section */
+.second-section h4{
+    color:#f7f7f7
+}
+
 .second-section{
     color: #292A6B;
-    background-color: #98DED9;
+    background-color: #f7d07d;
     padding: 100px;
     height: auto;
     text-align: center;
 }
 
 /*Style Team Section*/
+.team-members h4, h5 {
+    color: #0a6dc2;
+}
 .categories {
     display: flex;
     justify-content: center; 
@@ -244,15 +225,22 @@ nav ul li a:hover {
 .first-testimonial{
     width: 100%;
     height: auto;
-    background-color: #292A6B;
+    background-color: #0a6dc2;
+
     background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
 }
 
 .second-testimonial{
     width: 100%;
     height: auto;
-    background-color: #292A6B;
+    background-color: #0a6dc2;
+
     background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
+}
+
+#testimonial-heading{
+    color: white;
+    padding-top: 30px;
 }
 
 .testimonial-context{
@@ -266,6 +254,7 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     background-color: #f7d07d;
+
     background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
 }
 
@@ -276,44 +265,52 @@ nav ul li a:hover {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
 
-/*Style How Can We Help Section*/
-.help-section {
-    height: auto; 
-    background-color: #98DED9;
+ .e-book h1{
+    color:#0a6dc2;
+ }
+
+/*Style Course Section*/
+.course-section {
+    height: auto;
+
+    background-image: url ;
+
     padding: 20px;
     text-align: center; 
+    color:#0a6dc2;
 }
 
-#help-title {
+#course-title {
+    color:#0a6dc2;
     margin-top: 30px;
     margin-bottom: 20px; 
 }
 
-.help-categories {
+.course-categories {
     display: flex;
     justify-content: space-evenly; 
     align-items: center;
     padding: 0px;
 }
 
-.help-category {
+.course-category {
     text-align: center;
     width: 300px;
     }
 
-.help-category img {
+.course-category img {
     width: 50%; 
     height: auto;
     margin-bottom: 20px;
     margin-top: 20px;
 }
 
-.help-categories {
+.course-categories {
     display: flex;
     justify-content: space-between; /* Or use justify-content: center; for centering the children */
   }
   
-  .help-category {
+  .course-category {
     flex-basis: calc(50% - 30px); /* Set the width of each child element */
     flex-grow: 1;
     margin: 15px; /* Optional margin between the child elements*/
@@ -324,11 +321,11 @@ nav ul li a:hover {
   }
       
 
-.help-section p{
+.course-section p{
     font-size: 20px;
 }
 
-/* Style CTA button in Help Section*/
+/* Style CTA button in Course Section*/
 .cta-button2 {
     display: inline-block;
     padding: 10px 40px;
@@ -349,17 +346,23 @@ a.cta-button2:hover {
 }
 
 
-/* Style Values and Beliefs Section*/
-#values-beliefs{
-    background-color: #98DED9;
+/* Programs Section*/
+#programs{
+    background-color: #f7d07d;
+    color:#f7f7f7;
     height: auto;
     padding: 50px;
 }
 
-.value-categories {
+#programs-apart{
+    color:#f7f7f7;
+}
+
+.programs-categories {
     display: flex;
     justify-content: center; 
     align-items: center;
+    color:#f7f7f7;
   }
   
 .category {
@@ -374,7 +377,7 @@ a.cta-button2:hover {
   }
 
 .caption{
-    color: black;
+    color:#f7f7f7;
     font-size: 20px;
 }
 
@@ -384,7 +387,13 @@ a.cta-button2:hover {
 #news-section{
     padding: 20px;
     margin-bottom: 20px;
+    color:#0a6dc2;
 }
+
+#news-title {
+    color:#0a6dc2;
+}
+
 .news-categories {
     display: flex;
     justify-content: center; 
@@ -413,16 +422,16 @@ a.cta-button2:hover {
     display: inline-block;
     padding: 10px 40px;
     margin-top: 15px;
-    background-color: #98DED9; 
-    color: #292A6B;
+    background-color: #0a6dc2;
+    color: #f7d07d;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button3:hover {
-    background-color: #292A6B;
-    color: #98DED9;
+    background-color: #f7d07d;
+    color: #0a6dc2;
 }
 
 /* Style Podcast */
@@ -459,14 +468,14 @@ a.cta-button2:hover {
     padding: 50px;
     text-align: center;
     border-radius: 5px;
-    background-color: #161D6F;
-    color: #98DED9;
+    background-color: #0a6dc2;
+    color: #ffa800;
 
     font-size: 25px;
 }
 
 .submit-btn{
-    background-color: #98DED9;
+    background-color: #ffa800;
     border-radius: 50px;
     padding: 10px 25px;
     border-color: white;
@@ -492,7 +501,7 @@ a.cta-button2:hover {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 200;
-     margin-bottom: 15px;
+    margin-bottom: 15px;
     padding: 0px;
 }
 
@@ -501,7 +510,7 @@ input[type="email" i] {
     max-height: 100%;
 }
   
-.Times {
+.fitness {
     display: flex;
     color: #98DED9;
     font-size: 42px;
