@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/menu.css" />
+    <link rel="stylesheet" href="./Assets/CSS/modal.css" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+    <!--Modal Sign Up Script-->
+    <script
+  defer
+  src="https://unpkg.com/a11y-dialog@8/dist/a11y-dialog.min.js"
+></script>
+    <title>CareClub</title>
+  </head>
+
+  <body>
+    <header class="home-menu pure-menu pure-menu-horizontal">
+        <a href="./index.html" class="pure-menu-heading pure-menu-link" id="CareClub">The CareClub</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item">
+                <button type="button" data-a11y-dialog-show="my-dialog">Sign Up</button>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link">Member Login</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link">E-Book</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#" class="pure-menu-link">Wellness Programs</a>
+            </li>
+        </ul>
+    </header>
+
+    
+    <!-- The sign up dialog container -->
+    <div id="my-dialog"  data-a11y-dialog class="dialog-container" aria-labelledby="dialog-title" aria-hidden="true">
+      <div data-a11y-dialog-hide class="dialog-overlay"></div>
+      <div role="document" class="dialog-content">
+        <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+          &times;
+        </button>
+        <h1 id="dialog-title">Sign Up</h1>
+        <!-- Dialog content -->
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="aligned-name">Username</label>
+                    <input type="text" id="aligned-name" placeholder="Username" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-password">Password</label>
+                    <input type="password" id="aligned-password" placeholder="Password" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-email">Email Address</label>
+                    <input type="email" id="aligned-email" placeholder="Email Address" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-foo">Phone Number</label>
+                    <input type="text" id="aligned-foo" placeholder="Phone Number" />
+                </div>
+                <div class="pure-control-group">
+                    <label for="aligned-foo">Date of Birth</label>
+                    <input type="date" id="aligned-foo" placeholder="Date of Birth" />
+                </div>
+                <div class="pure-controls">
+                    <label for="aligned-cb" class="pure-checkbox">
+                        <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions
+                    </label>
+                    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                </div>
+            </fieldset>
+            </form>
+      </div>
+    </div>
+  
+  
+    <div class="hero-container">
+      <div class="hero-content">
+          <h1>MOVE by WellMates</h1>
+          <p>Through our program, participants will have access to a variety of wellness activities, workshops, and resources that cover various aspects of well-being, including physical, mental, and emotional health.</p>
+          <a href="#" class="cta-button">Enroll Now</a>
+      </div>
+  </div>
+  
+    <section class="book-testimonial">
+        <div>
+        <p class="book-context">"I learned practical tips and techniques that helped me
+            prioritize my well-being and lead a healthier and happier lifestyle.<br>
+            I highly recommend it to anyone looking to make a positive changes in their life."
+        </div>
+    </section>
+
+    <section class="e-book">
+    
+ <!--ebook picture needed-->
+        <img class="pure-img" src="" alt="ebook preview"/>
+
+        <h1>Limited Release</h1>
+        <p>A comprehensive guide that provides practical tips, strategies, and insights to help individuals improve their overall well-being. </p>
+        <a href="#" class="cta-button">Download E-Book</a>
+    </section> 
+
+<!--FOOTER-->
+<!--Sign Up Section-->
+<section>
+    <div class="container">
+        <h2>LETS KEEP IN TOUCH</h2>
+        <h3 id="newsletter-txt">Subscribe to our newsletter</h3>
+        <form id="signup-form">
+           
+            <input type="email" id="email" name="email" required placeholder="Enter your email address here">
+            <button class="submit-btn" type="submit">Sign Up</button>
+        </form>
+        <p id="confirmation-message"></p>
+    </div>
+    </section>
+  
+   
+  
+  <script src="./assets/js/script.js"></script>
+  
+  <!--FOOTER-->
+    <footer class="footer">
+  
+      <!--footer logos needed-->
+       <img src="./assets/images/WellMates Logo Carlos-01.png" alt="Logo">
+       
+        <p>© All rights reserved</p>
+    </footer>
+    </body>
