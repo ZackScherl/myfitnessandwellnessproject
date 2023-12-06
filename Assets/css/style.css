@@ -71,32 +71,40 @@ header {
     max-height: 100%;
 }
 
-/* Style the hero container */
+
+
+
 .hero-container {
     position: relative;
     display: flex;
     align-items: center;
-    background-color: #99c3e8; 
+    justify-content: center;
+    text-align: center;
     color: #0a6dc2;
-    min-height: 400px; 
-    overflow: hidden; 
-}
+    min-height: 400px;
+    overflow: hidden;
+  }
+  
+  .hero-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/Assets/Images-PROJ2/Photos/HERO-IMG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
 
-/* Style the hero image */
-.hero-container img {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    object-fit: cover; 
-}
-
-/* Style the hero content */
-.hero-content {
-    padding: 70px;
-    margin-left: 60px;
-    max-width: 50%;
-    background-color: #CBDFE8; 
-}
 
 .hero-content h1 {
     font-size: 2.5rem;
@@ -111,6 +119,8 @@ header {
     text-align: left;
 }
 
+
+
 .Hero {
     display: inline-block;
     height: 522px;
@@ -122,9 +132,9 @@ header {
 /* Style the Hero button */
 .cta-button {
     display: inline-block;
-    padding: 10px 40px;
-    background-color: #f7d07d; 
-    color: #292A6B; 
+    padding: 10px 20px;
+    background-color: #f7f7f7; 
+    color: #0a6dc2; 
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px;
@@ -166,13 +176,82 @@ header {
     color:#f7f7f7
 }
 
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Adjust the height of the section as needed */
+  }
+  
+  .image-container, .text-container {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .pure-img {
+    object-fit: contain;
+    max-height: 100%;
+  }
+  
+ 
+  .home-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+  
+  .pure-menu-list {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .pure-menu-item {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    vertical-align: middle;
+  }
+  
+  .pure-menu-link {
+    display: block;
+    padding: 1em;
+    color: #222;
+    text-decoration: none;
+  }
+  
+  .pure-menu-link:hover,
+  .pure-menu-link:focus,
+  .pure-menu-link:active {
+    background-color: #eee;
+  }
+  
+  .pure-menu-heading {
+    font-size: 1.125em;
+    font-weight: 400;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+  }
 .second-section{
     color: #292A6B;
     background-color: #f7d07d;
-    padding: 100px;
+    padding: 40px;
     height: auto;
     text-align: center;
 }
+
+#paragraph-wrapper {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 560px;
+  }
 
 /*Style Team Section*/
 .team-members h4, h5 {
@@ -336,7 +415,7 @@ header {
 }
 
 a.cta-button2{
-    background-color: #292A6B; 
+    background-color: #f7f7f7; 
     color: white;
 }
 
@@ -348,6 +427,7 @@ a.cta-button2:hover {
 
 /* Programs Section*/
 #programs{
+    text-align: center;
     background-color: #f7d07d;
     color:#f7f7f7;
     height: auto;
@@ -360,15 +440,16 @@ a.cta-button2:hover {
 
 .programs-categories {
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    color:#f7f7f7;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
   }
   
 .category {
     text-align: center;
     width: 176px; 
-    margin-right: 100px;
+   
   }
   
  .category img {
