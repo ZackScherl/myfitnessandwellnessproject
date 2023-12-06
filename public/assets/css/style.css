@@ -92,7 +92,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/Assets/Images-PROJ2/Photos/HERO-IMG.png");
+    background-image: url("/assets/images/Photos/HERO-IMG.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -306,7 +306,7 @@ header {
     height: auto;
     background-color: #0a6dc2;
 
-    background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
+    background-image: url("/assets/images/pexels-tima-miroshnichenko-6389079.jpg");
 }
 
 .second-testimonial{
@@ -314,7 +314,7 @@ header {
     height: auto;
     background-color: #0a6dc2;
 
-    background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
+    background-image: url("/assets/images/pexels-tima-miroshnichenko-6389079.jpg");
 }
 
 #testimonial-heading{
@@ -334,7 +334,7 @@ header {
     height: auto;
     background-color: #f7d07d;
 
-    background-image: url(".assets/images/pexels-tima-miroshnichenko-6389079.jpg");
+    background-image: url("/assets/images/pexels-tima-miroshnichenko-6389079.jpg");
 }
 
 .book-context{

@@ -1,15 +1,11 @@
+const path = require('path');
 const express = require ('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ });
 
-
-
-
-
-
 const app = express();
-
+const PORT = process.env.PORT || 3001;
 const routes = require('./routes');
 
 app.engine('handlebars', hbs.engine);
@@ -25,10 +21,10 @@ app.use(session({
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes)
-
+app.listen(PORT, () => console.log('Now listening'));
 
 
 

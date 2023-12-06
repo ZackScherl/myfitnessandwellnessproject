@@ -1,8 +1,11 @@
 //index file for using routes
 const router = require('express').Router();
-const apiRoutes = require('./api');
+//const apiRoutes = require('./api');
 
-router.use('/api', apiRoutes);
+const homeRoutes = require('./homeRoutes');
+
+router.use('/', homeRoutes);
+//router.use('/api', apiRoutes);
 
 
 
