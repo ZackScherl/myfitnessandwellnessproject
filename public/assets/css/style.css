@@ -95,9 +95,10 @@ header {
     background-image: url("/assets/images/Photos/HERO-IMG.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 0% 5%;
     z-index: -1;
   }
+
   
   .hero-content {
     max-width: 600px;
@@ -107,15 +108,15 @@ header {
 
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 41;
     margin-bottom: 10px;
-    color: #292A6B;
+    color: #f7f7f7;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 36;
     margin-bottom: 20px;
-    color: #292A6B;
+    color: #f7f7f7;
     text-align: left;
 }
 
