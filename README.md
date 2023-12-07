@@ -21,7 +21,7 @@
 ## Credits
 - Carlos Palacio - 
 - Nicholas Davis - https://github.com/Nicholasdavis03
-- Zachary Scherl - 
+- Zachary Scherl - https://github.com/ZackScherl
 - Isaac Wiggins - 
 
 ## License
