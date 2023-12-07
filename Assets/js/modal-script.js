@@ -37,11 +37,18 @@ document.querySelector("#submit-log").addEventListener("click", (event) => {
   console.log(userName, userPass);
 
 // get nick's route name for url
-  fetch()
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      for (var i = 0; i < data.length; i++) {}
-    });
+fetch("/login", {
+  Method: "POST",
+  Headers: {
+    Accept: "application.json",
+    "Content-Type": "application/json",
+  },
+  Body: JSON.stringify({username: userName, userpass: userPass}),
+})
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    for (var i = 0; i < data.length; i++) {}
+  });
 });
