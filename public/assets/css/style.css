@@ -143,8 +143,8 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #292A6B;
-    color:#98DED9;
+    background-color: #f7d07a;
+    color:#f7f7f7;
 }
 
 .category-title {
@@ -445,7 +445,7 @@ header {
 }
 
 a.cta-button2{
-    background-color: #f7f7f7; 
+    background-color: #0a6dc2; 
     color: white;
 }
 
@@ -534,7 +534,7 @@ a.cta-button2:hover {
     padding: 10px 40px;
     margin-top: 15px;
     background-color: #0a6dc2;
-    color: #f7d07d;
+    color: #f7f7f7;
     text-decoration: none;
     border-radius: 25px;
     transition: background-color 0.3s ease;
