@@ -33,7 +33,7 @@
                 <button type="button" data-a11y-dialog-show="my-dialog">Sign Up</button>
             </li>
             <li class="pure-menu-item">
-                <a href="#" class="pure-menu-link">Member Login</a>
+                <button type="button" data-a11y-dialog-show="login-dialog">Member Login</a>
             </li>
             <li class="pure-menu-item">
                 <a href="#" class="pure-menu-link">E-Book</a>
@@ -69,17 +69,14 @@
                     <input type="email" id="aligned-email" placeholder="Email Address" />
                 </div>
                 <div class="pure-control-group">
-                    <label for="aligned-foo">Phone Number</label>
-                    <input type="text" id="aligned-foo" placeholder="Phone Number" />
+                    <label for="aligned-num">Phone Number</label>
+                    <input type="text" id="aligned-num" placeholder="Phone Number" />
                 </div>
                 <div class="pure-control-group">
-                    <label for="aligned-foo">Date of Birth</label>
-                    <input type="date" id="aligned-foo" placeholder="Date of Birth" />
+                    <label for="aligned-dob">Date of Birth</label>
+                    <input type="date" id="aligned-dob" placeholder="Date of Birth" />
                 </div>
                 <div class="pure-controls">
-                    <label for="aligned-cb" class="pure-checkbox">
-                        <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions
-                    </label>
                     <button type="submit" class="pure-button pure-button-primary">Submit</button>
                 </div>
             </fieldset>
@@ -87,6 +84,32 @@
       </div>
     </div>
   
+    <!-- The member dialog container -->
+    <div id="login-dialog"  data-a11y-dialog class="dialog-container" aria-labelledby="dialog-title" aria-hidden="true">
+        <div data-a11y-dialog-hide class="dialog-overlay"></div>
+        <div role="document" class="dialog-content">
+          <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+            &times;
+          </button>
+          <h1 id="dialog-title">Member Login</h1>
+          <!-- Dialog content -->
+          <form class="pure-form pure-form-aligned">
+              <fieldset>
+                  <div class="pure-control-group">
+                      <label for="aligned-name">Username</label>
+                      <input type="text" id="aligned-name" placeholder="Username" />
+                  </div>
+                  <div class="pure-control-group">
+                      <label for="aligned-password">Password</label>
+                      <input type="password" id="aligned-password" placeholder="Password" />
+                  </div>
+                  <div class="pure-controls">
+                      <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                  </div>
+              </fieldset>
+              </form>
+        </div>
+      </div>
   
    
 
@@ -117,4 +140,8 @@
        
         <p>© All rights reserved</p>
     </footer>
+
+    <script src="./assets/js/modal-script.js"></script>
+
     </body>
+    </html>
