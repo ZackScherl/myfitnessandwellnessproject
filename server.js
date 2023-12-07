@@ -1,12 +1,16 @@
 const path = require('path');
+const path = require('path');
 const express = require ('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({ });
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 const PORT = process.env.PORT || 3001;
 const routes = require('./routes');
 
@@ -34,6 +38,7 @@ app.use(session(sess));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes)
