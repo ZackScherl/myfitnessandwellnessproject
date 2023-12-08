@@ -28,20 +28,21 @@
     <header class="home-menu pure-menu pure-menu-horizontal">
         <a href="#" class="pure-menu-heading pure-menu-link" id="CareClub">The CareClub</a>
         <ul class="pure-menu-list">
-          <li class="pure-menu-item">
-            <button type="button" data-a11y-dialog-show="my-dialog">Sign Up</button>
-          </li>
-          <li class="pure-menu-item">
-            <a href="#" class="pure-menu-link">Member Login</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="./e-book.html" class="pure-menu-link">E-Book</a>
-          </li>
-          <li class="pure-menu-item">
-            <a href="#wellness-programs" class="pure-menu-link">Wellness Programs</a>
-          </li>
+            <li class="pure-menu-item">
+                <button type="button" data-a11y-dialog-show="my-dialog">Sign Up</button>
+            </li>
+            <li class="pure-menu-item">
+                <button type="button" data-a11y-dialog-show="login-dialog">Member Login</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="./e-book.html" class="pure-menu-link">E-Book</a>
+            </li>
+            <li class="pure-menu-item">
+                <a href="#wellness-programs" class="pure-menu-link">Wellness Programs</a>
+            </li>
         </ul>
-      </header>
+    </header>
+
     
     <!-- 1. The dialog container -->
     <div id="my-dialog"  data-a11y-dialog class="dialog-container" aria-labelledby="dialog-title" aria-hidden="true">
@@ -71,25 +72,49 @@
                     <input type="email" id="aligned-email" placeholder="Email Address" />
                 </div>
                 <div class="pure-control-group">
-                    <label for="aligned-foo">Phone Number</label>
-                    <input type="text" id="aligned-foo" placeholder="Phone Number" />
+                    <label for="aligned-num">Phone Number</label>
+                    <input type="text" id="aligned-num" placeholder="Phone Number" />
                 </div>
                 <div class="pure-control-group">
-                    <label for="aligned-foo">Date of Birth</label>
-                    <input type="date" id="aligned-foo" placeholder="Date of Birth" />
+                    <label for="aligned-dob">Date of Birth</label>
+                    <input type="date" id="aligned-dob" placeholder="Date of Birth" />
                 </div>
                 <div class="pure-controls">
-                    <label for="aligned-cb" class="pure-checkbox">
-                        <input type="checkbox" id="aligned-cb" /> I&#x27;ve read the terms and conditions
-                    </label>
-                    <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    <button type="submit" class="pure-button pure-button-primary" id="submit-sign">Submit</button>
                 </div>
             </fieldset>
             </form>
       </div>
     </div>
 
-   
+    <!-- The member dialog container -->
+    <div id="login-dialog"  data-a11y-dialog class="dialog-container" aria-labelledby="dialog-title" aria-hidden="true">
+        <div data-a11y-dialog-hide class="dialog-overlay"></div>
+        <div role="document" class="dialog-content">
+          <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+            &times;
+          </button>
+          <h1 id="dialog-title">Member Login</h1>
+          <!-- Dialog content -->
+          <form class="pure-form pure-form-aligned">
+              <fieldset>
+                  <div class="pure-control-group">
+                      <label for="aligned-name">Username</label>
+                      <input type="text" id="aligned-name" placeholder="Username" />
+                  </div>
+                  <div class="pure-control-group">
+                      <label for="aligned-password">Password</label>
+                      <input type="password" id="aligned-password" placeholder="Password" />
+                  </div>
+                  <div class="pure-controls">
+                      <button type="submit" class="pure-button pure-button-primary" id="submit-log">Submit</button>
+                  </div>
+              </fieldset>
+              </form>
+        </div>
+      </div>
+
+    <!--Hero section-->
     <div class="hero-container">
       <div class="hero-content">
           <!--logo-->
@@ -124,7 +149,7 @@
 <!--Info Section-->
 <section class="second-section">
     <div class="image-container">
-      <img class="pure-img" src="./Assets/Images-PROJ2/Sections/INNER-HEALING.png" alt="Lady in flower">
+      <img class="pure-img" src="/assets/images/Sections/INNER-HEALING.png" alt="Lady in flower">
     </div>
     <div class="text-container">
       <h4>Take your first step<br>to inner healing</h4>
@@ -138,7 +163,7 @@
 
     <div class="categories">
         <div class="team-category">
-            <img class="pure-img" src="./Assets/Images-PROJ2/Photos/TEAM-LAURA.jpg" alt="team member"/>
+            <img class="pure-img" src="/assets/images/Photos/TEAM-LAURA.jpg" alt="team member"/>
             <div>
                 <h5>LAURA SIMPSON</h5>
                 <h6 class="team-member-title">Fitness and Nutrition Coach</h6>
@@ -146,7 +171,7 @@
             </div>
         </div>
         <div class="team-category">
-            <img class="pure-img" src="Assets/Images-PROJ2/Photos/TEAM-KATIE.jpg" alt="team member"/>
+            <img class="pure-img" src="/assets/images/Photos/TEAM-KATIE.jpg" alt="team member"/>
             <div>
                 <h5>KATIE COLE</h5>
                 <h6 class="team-member-title">Clinical Therapist and Mindset Coach</h6>
@@ -169,7 +194,7 @@
 <!--Courses-->
   <section class="course-section" id="wellness-programs">
       <h4 id="course-title">DISCOVER OUR NEWLY RELEASED COURSES</h4>
-      <p>We understand that your journey to well-being is unique and personal. <br>
+      <p>We understand that your journey t`o well-being is unique and personal. <br>
           That's why we've created a selection of new courses designed to support you every step of the way.</p>
       <div class="course-categories">
           <div class="course-category">
@@ -177,7 +202,7 @@
               <!--text on pic already? change links-->
 
               <h5>Unlocking the Secrets of Superfoods</h5>
-              <img class="pure-img" src="./assets/images/move.png" alt="wellness image"/>
+              <img class="pure-img" src="./assets/images/Course Covers/Secret of Superfoods.png" alt="wellness image"/>
                  <!-- <p>Effective and flexible approach to improving your physical and mental health. With this approach, you take responsibility for your own well-being and create a personalized program that meets your specific needs and goals.</p>-->
               <a href="#" class="cta-button2">Learn More</a>
           </div>       
@@ -186,7 +211,7 @@
 
           <div class="course-category"> 
           <h5>Taming Your Inner Critic</h5>
-          <img class="pure-img" src="./assets/images/mindfull.png" alt="mindfull image"/>
+          <img class="pure-img" src="./assets/images/Course Covers/Taming Your Inner Critic.png" alt="mindfull image"/>
               <!-- <p>Interactive, educational, and practical sessions that are designed to help individuals develop new skills, gain knowledge, and improve their overall physical and mental well-being.</p>-->
               <a href="#" class="cta-button2">Learn More</a>
           </div>
@@ -210,22 +235,22 @@
     <h4 id="programs-apart">WHAT SETS US APART</h4>
     <div class="programs-categories">
       <div class="category">
-        <img class="pure-img" src="./Assets/Images-PROJ2/Icons/FOOD-EXPERIENCE.png" alt="Category 1">
+        <img class="pure-img" src="/assets/images/Icons/FOOD-EXPERIENCE.png" alt="Category 1">
         <h2>FOOD AS AN EXPERIENCE</h2>
         <p class="caption">Well-being service providers incorporate food as a centerpiece of their offerings, creating a holistic approach to wellness.</p>
       </div>
       <div class="category">
-        <img class="pure-img" src="./Assets/Images-PROJ2/Icons/INNER-HARMONY.png" alt="Category 1">
+        <img class="pure-img" src="/assets/images/Icons/INNER-HARMONY.png" alt="Category 1">
         <h2>INNER HARMONY</h2>
         <p class="caption">Establish a state of balance and peace of mind, characterized by a sense of acceptance, contentment, and emotional resilience.</p>
       </div>
       <div class="category">
-        <img class="pure-img" src="./Assets/Images-PROJ2/Icons/SUPPORT.png" alt="Category 1">
+        <img class="pure-img" src="/assets/images/Icons/SUPPORT.png" alt="Category 1">
         <h2>SUPPORT GROUP</h2>
         <p class="caption">We create a safe and supportive space for individuals to share their experiences and connect with others who face similar challenges.</p>
       </div>
       <div class="category">
-        <img class="pure-img" src="./Assets/Images-PROJ2/Icons/PROGRESS.png" alt="Category 1">
+        <img class="pure-img" src="/assets/images/Icons/PROGRESS.png" alt="Category 1">
         <h2>PROGRESS CHECK</h2>
         <p class="caption">Our service doesn’t end after you finish your course. Your well-being matters to us.</p>
       </div>
@@ -239,7 +264,7 @@
       <div class="news-categories">
           <div class="news-category" id="article-1">
 
-              <img class="pure-img" src="./Assets/Images-PROJ2/Photos/NEWS-LEFT.jpg" alt="Category 1">
+              <img class="pure-img" src="/assets/images/Photos/NEWS-LEFT.jpg" alt="Category 1">
 
               <h2>PTSD in  America 2023</h2>
 
@@ -250,7 +275,7 @@
 
           <div class="news-category" id="article-2">
               
-          <img class="pure-img" src="./Assets/Images-PROJ2/Photos/NEWS-CENTER.jpg" alt="Category 1">
+          <img class="pure-img" src="/assets/images/Photos/NEWS-CENTER.jpg" alt="Category 1">
 
           <h2>Virtual and home-based 
               fitness fad</h2>
@@ -262,7 +287,7 @@
 
       <div class="news-category" id="article-3">
 
-          <img class="pure-img" src="./Assets/Images-PROJ2/Photos/NEWS-RIGHT.jpg" alt="Category 1">
+          <img class="pure-img" src="/assets/images/Photos/NEWS-RIGHT.jpg" alt="Category 1">
 
           <h2>Resistance training to 
               improve overall health</h2>
@@ -289,21 +314,16 @@
   </div>
   </section>
 
- 
-<script src="./assets/js/script.js"></script>
-
 <!--FOOTER-->
   <footer class="footer">
 
     <!--footer logos needed-->
-     <img src="./Assets/Images-PROJ2/LOGO/LOGO-FOOTER.png" alt="Logo">
+     <img src="./assets/images/WellMates Logo Carlos-01.png" alt="Logo">
      
       <p>© All rights reserved</p>
   </footer>
 
-</body>
-</html>
+<script src="./assets/js/modal-script.js"></script>
 
- 
-  </body>
+</body>
 </html>

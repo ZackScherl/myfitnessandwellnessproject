@@ -8,7 +8,6 @@ class Account extends Model {
         return bcrypt.compareSync(loginPw, this.password);
     }
 }
-
 Account.init(
 {
     email:{
@@ -46,3 +45,10 @@ hooks: {
 }
 );
 module.exports = Account;
+
+
+
+
+
+
+
