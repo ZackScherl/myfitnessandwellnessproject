@@ -19,9 +19,9 @@
 
 
 ## Credits
-- Carlos Palacio - 
+- Carlos Palacio - https://github.com/ChuckieCodes
 - Nicholas Davis - https://github.com/Nicholasdavis03
-- Zachary Scherl - 
+- Zachary Scherl - https://github.com/ZackScherl
 - Isaac Wiggins - 
 
 ## License
