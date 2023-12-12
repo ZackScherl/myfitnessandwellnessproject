@@ -4,7 +4,7 @@ router.get('/', async (req, res) => {
   res.render("home")
 });
 
-router.get('/e-book', async (req, res) => {
+router.get('/ebook', async (req, res) => {
   res.render("e-book")
 });
 
